@@ -223,3 +223,25 @@ print(string3.startswith("be"))
 string4 =string4.lstrip()
 string4 = string4.lower()
 print(string4.startswith("be"))
+
+inputValue = input("Enter your comment")
+inputValue = inputValue.upper()
+print(inputValue)
+
+# Review exercises
+# 1. Write a program that takes input from the user and displays that input back.
+
+string1 = input("Hello there! : ")
+print(string1)
+# 2. Write a program that takes input from the user and displays the input in lowercase
+string1 = input("Enter your string:")
+string1 = string1.lower()
+print(string1)
+
+# 3. Write a program that takes input from the user and displays the number of characters in the input
+
+string1 = input("Enter your string:")
+print(len(string1))
+
+
+
