@@ -242,3 +242,6 @@ print(string1)
 
 string1 = input("Enter your string:")
 print(len(string1))
+
+
+
