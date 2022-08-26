@@ -6,6 +6,9 @@ Deal with strings of numbers
 Format strings for printing 
  """
 
+import string
+
+
 print(type('Hello world'))
 phrase = "Hello, world"
 print(type(phrase))
@@ -109,3 +112,114 @@ string1 = "bazinga"
 last_index = len(string1)-1
 print(last_index)
 print(string1[2:last_index])
+
+# Manipulate strings with methods
+
+# Most commonly used string methods
+# 1. Convert a string to uppercase to lowercase
+# 2. Remove whitespace from a string
+# 3. Determine if a string begins or ends with certain characters
+
+# Converting string case
+upper_case_string = "HELLO WORLD!"
+lower_case_string = upper_case_string.lower()
+print(lower_case_string)
+new_upper_case_string = lower_case_string.upper()
+print(new_upper_case_string)
+
+# upper() and lower() must be used inconjuction with a string. They do not exist independently
+
+# Removing whitespace from a string
+# 1. rstrip() -> Removes whitespace from right side of the string
+# 2. lstrip() -> Removes whitespace from left side of the string
+# 3. strip()  -> Removes whitespaces from left and right side of the string
+
+name = "Jean-Luc Picard        "
+print(name)
+print(len(name))
+name = name.rstrip()
+print("Length of the string after rstrip():"+str(len(name)))
+
+name = "     Jean-Luc Picard"
+print(name)
+print(len(name))
+name = name.lstrip()
+print("Length of the string after lstrip():"+str(len(name)))
+
+name = "          Jean-Luc Picard      "
+print(name)
+print(len(name))
+name = name.strip()
+print("Length of the string after strip():" + str(len(name)))
+
+# Determine if a string starts or ends with a particular string
+starship = "Enterprise"
+print(starship.startswith("en"))
+
+print(starship.startswith("En"))
+print(starship.endswith("rise"))
+print(starship.endswith("riSE"))
+
+# Review Exercises
+
+# 1. Write a program that converts the following strings to lowercase:"Animals", "Badger", "Honey Bee", "Honey Badger"
+
+string1 = "Animals"
+string2 = "Badger"
+string3 = "Honey Bee"
+string4 = "Honey Badger"
+
+string1 = string1.lower()
+string2 = string2.lower()
+string3 = string3.lower()
+string4 = string4.lower()
+
+print(string1 +" "+ string2+ " "+string3+ " " +string4)
+
+# 2. Repeat exercise 1, but convert each string to uppercase instead of lowercase
+string1 = string1.upper()
+string2 = string2.upper()
+string3 = string3.upper()
+string4 = string4.upper()
+
+print(string1 +" "+ string2+ " "+string3+ " " +string4)
+
+# 3. Write a program that removes whitespace from the following strings, then print out the strings with the whitespace removed.
+
+string1 = "     Filet Mignon"
+string2= "Brikset      "
+string3= "    Cheeseburger      "
+
+print("Length of string1 before lstrip() : " + str(len(string1)))
+string1 = string1.lstrip()
+print("Length of string1 after lstrip() : "+ str(len(string1)))
+
+print("Length of the string2 before rstrip() : " + str(len(string2)))
+string2 = string2.rstrip()
+print("Length of string2 after rstrip() : " + str(len(string2)))
+
+print("Length of the string3 before strip() :" + str(len(string3)))
+string3 = string3.strip()
+print("Length of string3 after strip() : " + str(len(string3)))
+
+# 4. Write a program that prints out the result of .startswith("be") on each of the following strings:
+
+string1 = "Becomes"
+string2 = "becomes"
+string3 = "BEAR"
+string4 = "   bEautiful"
+print(string1.startswith("be"))
+print(string2.startswith("be"))
+print(string3.startswith("be"))
+print(string4.startswith("be"))
+
+# 5. Using the same four strings from exercise 4, write a program that uses string methods to alter each string so that .startswith("be") returns True for all of them.
+
+string1 = string1.lower()
+print(string1.startswith("be"))
+print(string2.startswith("be"))
+string3 = string3.lower()
+print(string3.startswith("be"))
+string4 =string4.lstrip()
+string4 = string4.lower()
+print(string4.startswith("be"))
