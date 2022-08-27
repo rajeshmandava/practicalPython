@@ -91,3 +91,45 @@ print(string1)
 # 2. Display the same string by using .format and empty {} placeholders
 string1 = "{} kg is the weight of the {}.".format(weight,animal)
 print(string1)
+
+# Find a string in a string
+# find() -> to find a string in another string
+# if find() doesn't find a desired substring, it will return -1
+# find() is case sensitive
+
+phrase = "the surprise is in here somewhere"
+index = phrase.find("surprise")
+print(index)
+print(phrase.find("askdhsk"))
+
+string1 = "I put a string in your string"
+print(string1.find("string"))
+
+string1 = "my number is 0123456789"
+# print(string1.find(1)) TypeError: must be str, not int
+print(string1.find("1"))
+
+pun_intended = "I'm telling you the truth; no thing but the truth!"
+pun_intended = pun_intended.replace("the truth", "lies")
+print(pun_intended)
+
+text = "some of the stuff"
+new_text = text.replace("some of","all")
+print(new_text)
+new_text = new_text.replace("stuff","things")
+print(new_text)
+
+# Review exercises
+# 1. In one line of code, display the result of tring to .find() the substring "a" in the string "AAA". The result should be -1
+string="AAA"
+print(string.find("a"))
+
+# 2. Replace every occurence of the character "s" with "x" in the string "Somebody said something to Samantha."
+string1 = "Somebody said something to Samantha."
+string1 = string1.replace("s","x")
+print(string1)
+
+# 3. Write a program that accepts user input with input() and displays the result of tring to .find() a particular letter in that input.
+string1 = input("Enter your input:")
+string2 = input("Enter substring to find:")
+print(string1.find(string2))
