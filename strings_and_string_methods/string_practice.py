@@ -133,3 +133,5 @@ print(string1)
 string1 = input("Enter your input:")
 string2 = input("Enter substring to find:")
 print(string1.find(string2))
+
+
