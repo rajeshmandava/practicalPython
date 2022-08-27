@@ -51,3 +51,112 @@ print(num2)
 
 num = 2e308 # 2e308 is smallest exponent number which returns inf
 print(num)
+
+# Airthmetic Operators and Expressions
+
+# Addition
+num1 = 1
+num2 = 2
+num = num1+num2
+print(num)
+num1 = 10.0
+num = num1+num2
+print(num)
+
+# Subtraction
+num = num1 - num2
+print(num)
+num1 = -3
+print(num1)
+
+num1 = 1
+num2= -3
+num = num1 - num2
+print(num)
+
+# Multiplication
+
+num1 = 3
+num2 = 4
+num = num1 * num2
+print(num)
+
+num1 = 2
+num2 = 8.0
+num = num1 * num2
+print(num)
+
+# Division
+num1 = 9
+num2 = 3
+num = num1 / num2
+print(num)
+
+num1 = 5.0
+num2 = 2
+num = num1 / num2
+print(num)
+
+num1 = 9
+num2 = 3
+num = int(num1 / num2)
+print(num)
+
+# Integer Division
+num1 = 9
+num2 = 3
+num = num1 // num2
+print(num)
+
+num1 = 5.0
+num2 = 2
+num = num1//num2
+print(num)
+
+# Exponents
+num1 = 2
+num2 = 2
+num = num1 ** num2
+print(num)
+
+num1 = 2
+num2 = 3
+num = num1 ** num2
+print(num)
+
+num1 = 3
+num2 = 1.5
+num = num1 ** num2
+print(num)
+
+num1 = 9
+num2 = 0.5
+num = num1 ** num2
+print(num)
+
+num1 = 2
+num2 = -1
+num = num1 ** num2
+print(num)
+
+num1 = 2
+num2 = -2
+num = num1 ** num2
+print(num)
+
+# The Modulus Operator
+
+num1 = 5
+num2 = 3
+num = num1 % num2
+print(num)
+
+num1 = 20
+num2 = 7
+num = num1 % num2 
+print(num)
+
+num1 = 16
+num2 = 8
+num = num1 % num2
+print(num)
